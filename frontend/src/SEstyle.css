@@ -129,9 +129,8 @@
 .innerbody2 {
   border-radius: 0.5rem;
   height: 120vh;
-  margin-left: -164px;
   position: relative;
-  width: 83%;
+  width: 90%;
   margin-top: 100px;
   margin-bottom: 50px;
   overflow-y: scroll;
@@ -143,7 +142,7 @@
 }
 .showdata {
   height: fit-content;
-  width:fit-content;
+  width:inherit;
   padding: 70px;
   
 }
