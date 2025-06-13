@@ -14,11 +14,14 @@ export default function SE() {
     e.preventDefault();
 
     try {
-      const response = await axios.get("http://localhost:5000/search", {
-        params: {
-          name: name,
-        },
-      });
+      const response = await axios.get(
+        "https://blackhole-search-engine.onrender.com",
+        {
+          params: {
+            name: name,
+          },
+        }
+      );
 
       if (response.data === "fail") {
         alert("Failed");
@@ -35,7 +38,9 @@ export default function SE() {
     console.log("crawler clicked");
     if (!url) console.log("url required at Ui");
 
-    await axios.post("http://localhost:5000/crawl", { url });
+    await axios.post("https://blackhole-search-engine.onrender.com/crawl", {
+      url,
+    });
   };
 
   return (
@@ -86,7 +91,8 @@ export default function SE() {
           <h3
             style={{
               color: "whitesmoke",
-              fontFamily: "calibri",letterSpacing:"4px",
+              fontFamily: "calibri",
+              letterSpacing: "4px",
             }}
           >
             Contact Us 💬{" "}
@@ -97,7 +103,9 @@ export default function SE() {
               src={img04}
               alt="git"
             />
-            <a href="https://github.com/mysteriork" target="_blank" >Github</a>
+            <a href="https://github.com/mysteriork" target="_blank">
+              Github
+            </a>
           </div>
 
           <li>✉️ Email : callmerachit145@gmail.com</li>
