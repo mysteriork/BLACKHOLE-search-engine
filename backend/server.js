@@ -72,8 +72,6 @@ const crawl = async (startUrl) => {
       visited.add(currentUrl);
       crawledCount++;
 
-      const virusTotalResult = await checkUrlWithVirusTotal(currentUrl);
-
       const page = new googles({
         Url: currentUrl,
         Title: title,
