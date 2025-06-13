@@ -1,0 +1,13 @@
+.mainpage {
+  height: 250vh;
+  width: 97vw;
+  padding: 1em;
+  margin: 0;
+}
+.secondpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}

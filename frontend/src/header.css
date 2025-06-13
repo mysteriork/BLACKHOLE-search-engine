@@ -1,0 +1,75 @@
+.head {
+  height: 100vh;
+  width: 99vw;
+}
+.header {
+  height: 4vh;
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(39, 38, 38, 0.598);
+  padding: 2em;
+  box-shadow: 0px 2px 8px black;
+  margin-top: .1em;
+}
+.navimghead {
+  height: 8vh;
+  width: 17vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navimg {
+  height: inherit;
+  width: 7vw;
+  padding: .5em;
+}
+.navbar{
+    height: 12vh;
+    width: 24vw;
+    margin-bottom: -2em;
+
+}
+.inputbox{
+    border-radius: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: .9em;
+    width: 23em;
+    border: 1.7px ridge rgb(128, 255, 0);
+    filter: drop-shadow(0 0 0.6em rgba(49, 123, 10, 0.742));
+    padding: .6em;
+
+}
+.title{
+    font-size: larger;
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+li1,li2,li3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+li1,li2,li3:hover{
+cursor: pointer;
+}
+.searchbar{
+width: 26vw;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.btninput{
+    border-radius: .4em;
+    background-color: rgba(0, 0, 0, 0.331);
+    color: white;
+}
+.btninput:hover{
+    cursor: pointer;
+}
