@@ -15,7 +15,7 @@ export default function SE() {
 
     try {
       const response = await axios.get(
-        "https://blackhole-search-engine.onrender.com",
+        "https://blackhole-search-engine.onrender.com/search",
         {
           params: {
             name: name,
