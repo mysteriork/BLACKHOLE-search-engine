@@ -9,10 +9,12 @@ import axios from "axios";
 export default function SE() {
   const [name, setName] = useState("");
   const [data, setData] = useState([]);
+  const [bool, setBool] = useState(false);
 
   async function submit(e) {
     e.preventDefault();
 
+    setBool(true);
     try {
       const response = await axios.get(
         "https://blackhole-search-engine.onrender.com/search",
@@ -28,10 +30,12 @@ export default function SE() {
       } else {
         setData(response.data);
       }
+      setName("");
     } catch (error) {
       console.error("Error occurred:", error);
       alert("An error occurred while fetching the data.");
     }
+    setBool(false);
   }
 
   const crawl = async (url) => {
@@ -66,23 +70,38 @@ export default function SE() {
       <div className="logo">
         <img src={img03} alt="image" className="logoimg" />
       </div>
+      {bool && (
+        <p
+          style={{
+            color: "black",
+            fontSize: "x-large",
+            marginTop: "40px",
+            fontWeight: "bold",
+            letterSpacing: "5px",
+            marginInline: "auto",
+          }}
+        >
+          Loading ...{" "}
+        </p>
+      )}
       <div className="innerbody2">
         <div className="showdata">
-          {data.map((e) => (
-            <section className="section" key={e._id}>
-              <br />
-              <h3 id="titless">{e.Title}</h3>
-              <a
-                href={e.Url}
-                target="_blank"
-                className="link"
-                onClick={() => crawl(e.Url)}
-              >
-                {e.Url}
-              </a>
-              <p className="desc">{e.Description}</p>
-            </section>
-          ))}
+          {data &&
+            data.map((e) => (
+              <section className="section" key={e._id}>
+                <br />
+                <h3 id="titless">{e.Title}</h3>
+                <a
+                  href={e.Url}
+                  target="_blank"
+                  className="link"
+                  onClick={() => crawl(e.Url)}
+                >
+                  {e.Url}
+                </a>
+                <p className="desc">{e.Description}</p>
+              </section>
+            ))}
         </div>
       </div>
       <div className="footer">
