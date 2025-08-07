@@ -1,5 +1,5 @@
 import React from "react";
-import img02 from "../images/bh.jpg";
+import img02 from "../images/bhole.png";
 import img03 from "../images/blackline.png";
 import img04 from "../images/github.png";
 import "../SEstyle.css";
@@ -50,7 +50,17 @@ export default function SE() {
   return (
     <div className="Body">
       <div className="InnerBody">
-        <img src={img02} alt="image" className="blackhole" />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+            marginBottom: "30px",
+          }}
+        >
+          <img src={img02} alt="image" className="blackhole" />
+        </div>
 
         <form className="form" onSubmit={submit}>
           <input
@@ -60,7 +70,7 @@ export default function SE() {
             }}
             type="text"
             className="txt"
-            placeholder="Search here ..."
+            placeholder="Search anything ..."
           />
           <button type="submit" className="btn">
             Search
