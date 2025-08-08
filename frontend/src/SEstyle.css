@@ -5,7 +5,7 @@
 }
 
 .Body {
-   background: linear-gradient(to bottom,rgb(81, 2, 81),white);
+  background: linear-gradient(to bottom, rgb(81, 2, 81), white);
   height: 240vh;
   width: 100%;
   display: flex;
@@ -16,10 +16,10 @@
 
 /*HOME*/
 
-#webdiv{
+#webdiv {
   height: 100vh;
   width: 100vw;
-  background-image: url('./images/nature2.jpg');
+  background-image: url("./images/nature2.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -28,15 +28,15 @@
   align-items: center;
   gap: 100px;
 }
-.webheading{
+.webheading {
   margin-top: -5rem;
   color: rgb(253, 253, 253);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   letter-spacing: 5px;
   font-size: xxx-large;
-  filter: drop-shadow(4px 4px 3px rgb(235, 47, 79))
+  filter: drop-shadow(4px 4px 3px rgb(235, 47, 79));
 }
-.webbtn{
+.webbtn {
   height: 90px;
   width: 300px;
   border: 4px ridge rgb(135, 139, 5);
@@ -44,28 +44,26 @@
   color: wheat;
   box-shadow: 0 0 20px white;
   margin-inline: auto;
-  transition: background-color .3s ease-in ,transform .6s ease;
+  transition: background-color 0.3s ease-in, transform 0.6s ease;
 }
 
-.webbtn:hover{
- background-color: rgb(132, 132, 4);
- transform: scale(1.1);
+.webbtn:hover {
+  background-color: rgb(132, 132, 4);
+  transform: scale(1.1);
 }
 
 /*BLACK HOLE*/
 
 .blackhole {
-   height: 80px;
-  width: 200px;
-  filter: brightness(5);
+  height: 70px;
+  width: 150px;
 }
 .InnerBody {
-  height: 400px;
-  width: 700px;
+  height: 25rem;
+  width: 60rem;
   position: relative;
-  background-color: rgba(16, 16, 16, 0.995);
-  top: 6em;
-  box-shadow: 0px 0px 5px rgb(39, 39, 39);
+  background: transparent;
+  top: 4rem;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -74,17 +72,18 @@
   z-index: 99999;
 }
 .form {
+  height: fit-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 150px;
 }
 
 .logo {
-  margin-top: 120px;
+  margin-top: 100px;
   height: 0.2em;
-  width: 600px;
+  width: 500px;
   opacity: 0.4;
 }
 .logoimg {
@@ -93,11 +92,11 @@
   width: inherit;
 }
 .txt {
-   height: 70px;
-  width: 550px;
+  height: 80px;
+  width: 800px;
   filter: drop-shadow(0 0 0.6em rgba(16, 16, 16, 0.626));
   border-radius: 2em;
-  font-family:'Courier New', Courier, monospace;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 600;
   font-size: medium;
   text-indent: 20px;
@@ -106,21 +105,22 @@
   z-index: 9999;
 }
 .txt:focus {
-  outline: 4px solid rgb(118, 2, 118);
+  outline: 4px solid rgb(25, 25, 25);
 }
 .btn {
- margin-top: 20px;
+  margin-top: 20px;
   height: 60px;
   width: 400px;
   border-radius: 5px;
-  background-color: rgb(95, 7, 95);
+  background-color: rgb(19, 18, 19);
   color: #fefefeda;
   font-family: fantasy;
   font-size: larger;
   font-weight: bold;
   border: 2px solid black;
 }
-.btn,.webbtn:hover {
+.btn,
+.webbtn:hover {
   cursor: pointer;
 }
 
@@ -135,13 +135,12 @@
   overflow-x: none;
   scroll-behavior: smooth;
   background-color: rgba(250, 247, 247, 0.242);
-   scrollbar-width: none;
+  scrollbar-width: none;
 }
 .showdata {
   height: fit-content;
-  width:fit-content;
+  width: fit-content;
   padding: 70px;
-  
 }
 
 #titless {
@@ -153,7 +152,7 @@
 
 .link {
   margin-top: 6px;
-  font-family:Arial, Helvetica, sans-serif,fantasy;
+  font-family: Arial, Helvetica, sans-serif, fantasy;
   font-size: large;
   text-decoration: none;
   color: rgba(4, 4, 196, 0.74);
@@ -170,9 +169,7 @@ h3 {
   font-size: x-large;
 }
 
-
 .section {
-  
   gap: 9px;
   padding: 5px;
   display: flex;
@@ -199,7 +196,7 @@ h3 {
   width: 100vw;
 }
 .foot1 {
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -228,72 +225,74 @@ h3 {
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.github > a{
+.github > a {
   color: white;
   text-decoration: none;
   font-size: medium;
 }
-.github > a:hover{
+.github > a:hover {
   color: lightpink;
 }
-.github>img{
+.github > img {
   filter: invert(5);
 }
-.github{
-display: flex;
-gap: 10px;
-align-items: center;
+.github {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-@media only screen and (max-width:480px) {
-
-  .InnerBody{
-    width: 330px;
+@media only screen and (max-width: 480px) {
+  .InnerBody {
+    width: 300px;
   }
-  .Body{
+  .form{
+    height: fit-content;
+    width: fit-content;
+  }
+  .Body {
     width: 100vw;
     height: 170vh;
   }
-  .txt{
+  .txt {
     width: 300px;
     font-weight: 400;
   }
-  .btn{
+  .btn {
     width: 200px;
   }
-  .innerbody2{
+  .innerbody2 {
     height: 30rem;
     margin: 0;
     width: 21rem;
   }
-  .showdata{
+  .showdata {
     width: fit-content;
     padding: 0;
   }
-  .section{
+  .section {
     padding: 10px;
     width: inherit;
     display: flex;
     flex-wrap: wrap;
   }
-  #titless{
-   font-size: medium;
-   width: fit-content;
-   font-weight: bolder;
-   text-wrap: wrap;
+  #titless {
+    font-size: medium;
+    width: fit-content;
+    font-weight: bolder;
+    text-wrap: wrap;
   }
-  .link{
+  .link {
     font-size: small;
-
   }
-  .logo{
+  .logo {
     width: 20rem;
     margin: 0;
   }
-  .desc{
+  .desc {
     font-size: small;
   }
-  .footer{
+  .footer {
     flex-direction: column;
     gap: 20px;
     height: 210px;
@@ -301,25 +300,24 @@ align-items: center;
     padding-top: 20px;
     margin: 0;
   }
-  #copyright{
+  #copyright {
     font-size: medium;
   }
-  .foot1{
+  .foot1 {
     list-style: none;
     height: 120px;
     width: fit-content;
     display: flex;
-  
   }
-  .webbtn{
+  .webbtn {
     width: 240px;
   }
- 
-  #webdiv{
+
+  #webdiv {
     gap: 40px;
   }
-  .webheading{
-    font-size:xx-large;
+  .webheading {
+    font-size: xx-large;
     line-height: 44px;
     text-align: center;
   }
