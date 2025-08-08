@@ -107,11 +107,8 @@ npm start    # Start the frontend React app
 
 UI SNAPSHOTS OF WEB APP :
 1- USER INTERFACE :
-![image](https://github.com/user-attachments/assets/67ceacda-a854-4dad-8ce4-a2f3ccd2603e)
+<img width="1856" height="838" alt="Screenshot 2025-08-08 114507" src="https://github.com/user-attachments/assets/4e6d29fe-6f99-4de9-828d-0aa171b3de91" />
 
-- This includes the Main overview of the Website .
-Overview
-   ![image](https://github.com/user-attachments/assets/6487b155-ba9f-400c-95c0-76939848b403)
 
 2- SEARCH FUNCTIONALITY :
 - This includes the interaction between the “ frontend ” and “
@@ -119,15 +116,19 @@ backend ” such as - taking the user’s query and getting it matched
 with the ‘database’ through the backend ‘server’ and then
 returning back the desired data to the user .
 Section for taking the Queries
-  ![image](https://github.com/user-attachments/assets/ec09c7da-8715-4827-bb8b-7648ffa452f2)
-![image](https://github.com/user-attachments/assets/d448c541-984d-4b00-bc43-caaca4d4806c)
+<img width="1842" height="939" alt="Screenshot 2025-08-08 114611" src="https://github.com/user-attachments/assets/29bf2a4a-12d1-4d68-9be2-0380e6de6e7b" />
+
 
 
 3- DISPLAYING RESULTS :
 - It is the last but not least step , it includes the final and another
 important step i.e Displaying the “ Result ” .
 Displaying the results below
-![image](https://github.com/user-attachments/assets/6ce09908-2521-4757-a330-c705a00269ad)
+
+<img width="1785" height="877" alt="Screenshot 2025-08-08 114627" src="https://github.com/user-attachments/assets/feb7b92f-aaa1-4019-b358-95d32d8c2404" />
+
+
+<img width="1834" height="914" alt="Screenshot 2025-08-08 114645" src="https://github.com/user-attachments/assets/8716f2c9-6939-41ef-b84c-ae06220c3d41" />
 
 
 🤝 Contributors
