@@ -17,7 +17,7 @@ export default function SE() {
     setBool(true);
     try {
       const response = await axios.get(
-        "https://blackhole-search-engine.onrender.com/search",
+        "https://blackhole-search-engine-wnt6.onrender.com/search",
         {
           params: {
             name: name,
@@ -42,7 +42,7 @@ export default function SE() {
     console.log("crawler clicked");
     if (!url) console.log("url required at Ui");
 
-    await axios.post("https://blackhole-search-engine.onrender.com/crawl", {
+    await axios.post("https://blackhole-search-engine-wnt6.onrender.com/crawl", {
       url,
     });
   };
