@@ -125,10 +125,8 @@ Section for taking the Queries
 important step i.e Displaying the “ Result ” .
 Displaying the results below
 
-<img width="1785" height="877" alt="Screenshot 2025-08-08 114627" src="https://github.com/user-attachments/assets/feb7b92f-aaa1-4019-b358-95d32d8c2404" />
+<img width="1663" height="2606" alt="image" src="https://github.com/user-attachments/assets/16ca4f18-4a6e-4a2a-bf81-dbb2a5c890bc" />
 
-
-<img width="1834" height="914" alt="Screenshot 2025-08-08 114645" src="https://github.com/user-attachments/assets/8716f2c9-6939-41ef-b84c-ae06220c3d41" />
 
 
 🤝 Contributors
