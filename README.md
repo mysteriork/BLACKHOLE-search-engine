@@ -125,7 +125,7 @@ Section for taking the Queries
 important step i.e Displaying the “ Result ” .
 Displaying the results below
 
-<img width="1663" height="2606" alt="image" src="https://github.com/user-attachments/assets/16ca4f18-4a6e-4a2a-bf81-dbb2a5c890bc" />
+<img width="1663" height="2391" alt="image" src="https://github.com/user-attachments/assets/e4bd19b1-8935-43c5-8bdb-08fd6774ce14" />
 
 
 
