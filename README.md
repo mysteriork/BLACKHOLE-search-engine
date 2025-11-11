@@ -1,6 +1,6 @@
 
 ## 🟢 WEBSITE IS LIVE HERE : 👇
-https://blackhole-search-engine.vercel.app/
+## https://blackhole-search-engine.vercel.app/
 
 ## BlackHole - Search Engine with Web Crawler 
 📌 Project Overview
@@ -10,6 +10,8 @@ BlackHole is a search engine project built using the MERN stack (MongoDB, Expres
 This project implements a web crawler that uses the Breadth-First Search (BFS) algorithm and Queue Data Structure to systematically visit and extract data from web pages. Axios and Cheerio are used for making HTTP requests and parsing HTML content, respectively.
 
 The project follows MVC architecture, and employs Agile methodology with iterative development, continuous testing, and feature enhancements.
+
+---
 🎯 Objectives
 
 ✅ Web Scraping: Automatically crawls specified web pages and extracts structured data.
@@ -105,12 +107,16 @@ npm start    # Start the frontend React app
 
     Scalability - Managing large-scale web crawling efficiently.
 
-UI SNAPSHOTS OF WEB APP :
-1- USER INTERFACE :
+---
+
+# SNAPSHOTS OF WEB APP 📸
+.
+## 1- USER INTERFACE : 🏠
 <img width="1856" height="838" alt="Screenshot 2025-08-08 114507" src="https://github.com/user-attachments/assets/4e6d29fe-6f99-4de9-828d-0aa171b3de91" />
 
+---
 
-2- SEARCH FUNCTIONALITY :
+## 2- SEARCH FUNCTIONALITY : 🌐
 - This includes the interaction between the “ frontend ” and “
 backend ” such as - taking the user’s query and getting it matched
 with the ‘database’ through the backend ‘server’ and then
@@ -118,21 +124,23 @@ returning back the desired data to the user .
 Section for taking the Queries
 <img width="1842" height="939" alt="Screenshot 2025-08-08 114611" src="https://github.com/user-attachments/assets/29bf2a4a-12d1-4d68-9be2-0380e6de6e7b" />
 
+---
 
-
-3- DISPLAYING RESULTS :
+## 3- DISPLAYING RESULTS : 📊
 - It is the last but not least step , it includes the final and another
 important step i.e Displaying the “ Result ” .
 Displaying the results below
 
 <img width="1663" height="2391" alt="image" src="https://github.com/user-attachments/assets/3b7b0bb7-90f4-424f-b976-210fad007e60" />
 
-
+---
 
 🤝 Contributors
 
- @Mysteriork --- RACHIT KUMAR
+## License 🪪
 
-License
+### @Mysteriork --- RACHIT KUMAR 🙋
+
+### Send Mail to callmerachit145@gmail.com 📧
 
 This project is open-source and available under the MIT License.
