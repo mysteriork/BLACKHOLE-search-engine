@@ -5,3 +5,10 @@ steganography.min.js
 /.env
 
 //.env
+
+# components 
+
+/src/components/home.js
+/src/components/searchEngine.js
+/components/searchEngine.js
+/components/home.js
