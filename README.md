@@ -6,7 +6,7 @@
 ## BlackHole - Search Engine with Web Crawler 
 📌 Project Overview
 
-BlackHole is a search engine project built using the MERN stack (MongoDB, Express, React, Node.js). It is inspired by Google's interface and functionality, designed to crawl and index web pages, allowing users to search through them efficiently.
+BlackHole is a search engine project built using the MERN stack (MongoDB, Express, React, Node.js). It is inspired by Google's interface and functionality, designed to crawl and index web pages, allowing users to search through them efficiently with client side Pagination feature .
 
 This project implements a web crawler that uses the Breadth-First Search (BFS) algorithm and Queue Data Structure to systematically visit and extract data from web pages. Axios and Cheerio are used for making HTTP requests and parsing HTML content, respectively.
 
@@ -20,6 +20,9 @@ The project follows MVC architecture, and employs Agile methodology with iterati
 ✅ Data Storage: Uses MongoDB for storing crawled pages and search results.
 ✅ User-Friendly UI: Features a React-based frontend with a minimalist Google-like interface.
 ✅ Scalability & Performance: Ensures efficient crawling and searching using asynchronous operations.
+
+---
+
 🛠 Technologies Used
 Frontend
 
@@ -46,6 +49,9 @@ Libraries & Tools
     CORS - Manages cross-origin requests between frontend and backend.
 
     Dotenv - Handles environment variables securely.
+
+---
+
 
 ⚙️ Implementation Details
 Backend (Node.js & Express)
@@ -80,6 +86,8 @@ Frontend (React)
 
     API Calls - Uses Axios to interact with backend APIs.
 
+---
+
 🚀 How to Run the Project
 1️⃣ Clone the Repository
 
@@ -98,6 +106,9 @@ npm install  # Install dependencies
 npm start    # Start the frontend React app
 
 🚀 The app will be available at: http://localhost:3000
+
+---
+
 ⚡ Challenges Faced
 
     Error Handling - Implementing robust error handling for network and database issues.
@@ -113,7 +124,7 @@ npm start    # Start the frontend React app
 # SNAPSHOTS OF WEB APP 📸
 .
 ## 1- USER INTERFACE : 🏠
-<img width="1856" height="838" alt="Screenshot 2025-08-08 114507" src="https://github.com/user-attachments/assets/4e6d29fe-6f99-4de9-828d-0aa171b3de91" />
+<img width="1656" height="927" alt="Screenshot 2026-04-25 175634" src="https://github.com/user-attachments/assets/0cf24664-8f16-4ce4-959a-4bd745a37177" />
 
 ---
 
@@ -123,7 +134,7 @@ backend ” such as - taking the user’s query and getting it matched
 with the ‘database’ through the backend ‘server’ and then
 returning back the desired data to the user .
 Section for taking the Queries
-<img width="1842" height="939" alt="Screenshot 2025-08-08 114611" src="https://github.com/user-attachments/assets/29bf2a4a-12d1-4d68-9be2-0380e6de6e7b" />
+<img width="1673" height="926" alt="Screenshot 2026-04-25 175731" src="https://github.com/user-attachments/assets/02506f1c-9a90-4f09-a5ef-08bb179e683b" />
 
 ---
 
@@ -132,7 +143,7 @@ Section for taking the Queries
 important step i.e Displaying the “ Result ” .
 Displaying the results below
 
-<img width="1663" height="2391" alt="image" src="https://github.com/user-attachments/assets/3b7b0bb7-90f4-424f-b976-210fad007e60" />
+<img width="1646" height="908" alt="Screenshot 2026-04-25 175746" src="https://github.com/user-attachments/assets/a6a9477b-b578-4009-84ad-6b30ea4bfc29" />
 
 ---
 
