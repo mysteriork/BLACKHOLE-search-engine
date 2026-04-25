@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-import img02 from "../images/bhole.png";
-import img03 from "../images/blackline.png";
-import img04 from "../images/github.png";
+import img02 from "../assets/bhole.png";
+import img03 from "../assets/blackline.png";
+import img04 from "../assets/github.png";
 
 /* ─── Inline styles as a JS object map ─── */
 const S = {
@@ -218,12 +218,14 @@ const S = {
     animation: "shimmer 1.4s ease-in-out infinite",
   },
 
-  skBar: (w, h = 12) => ({
-    height: h,
-    width: w,
-    background: "#1f2937",
-    borderRadius: 6,
-  }),
+  skBar: function (w, h = 12) {
+    return {
+      height: h,
+      width: w,
+      background: "#1f2937",
+      borderRadius: 6,
+    };
+  },
 
   footer: {
     marginTop: "auto",
@@ -322,7 +324,6 @@ const injectKeyframes = () => {
   document.head.appendChild(style);
 };
 
-/* ── Skeleton loader ─*/
 function SkeletonCards() {
   return (
     <div style={S.loadingWrap}>
@@ -378,6 +379,8 @@ export default function SE() {
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
   const inputRef = useRef(null);
+  const [page, setPage] = useState(1);
+  const ITEMS_PER_PAGE = 10;
 
   useEffect(() => {
     injectKeyframes();
@@ -390,6 +393,7 @@ export default function SE() {
     setLoading(true);
     setSearched(true);
     setData([]);
+    setPage(1);
     try {
       const response = await axios.get(
         "https://blackhole-search-engine-wnt6.onrender.com/search",
@@ -417,6 +421,10 @@ export default function SE() {
       console.log("Crawling error at client side", error.message);
     }
   };
+
+  const startIndex = (page - 1) * ITEMS_PER_PAGE;
+  const paginatedData = data.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(data.length / ITEMS_PER_PAGE);
 
   return (
     <div style={S.root}>
@@ -464,7 +472,7 @@ export default function SE() {
           <p style={S.resultsMeta}>
             {data.length} result{data.length !== 1 ? "s" : ""} found
           </p>
-          {data.map((item, i) => (
+          {paginatedData.map((item, i) => (
             <ResultCard
               key={item._id}
               item={item}
@@ -472,6 +480,36 @@ export default function SE() {
               onCrawl={crawl}
             />
           ))}
+        </div>
+      )}
+      {!loading && data.length > 10 && (
+        <div
+          style={{
+            display: "flex",
+            gap: 10,
+            justifyContent: "center",
+            marginTop: 20,
+          }}
+        >
+          <button
+            style={S.btn}
+            disabled={page === 1}
+            onClick={() => setPage((p) => p - 1)}
+          >
+            Prev
+          </button>
+
+          <span style={{ alignSelf: "center", fontSize: 14 }}>
+            Page {page} of {totalPages}
+          </span>
+
+          <button
+            style={S.btn}
+            disabled={page === totalPages}
+            onClick={() => setPage((p) => p + 1)}
+          >
+            Next
+          </button>
         </div>
       )}
 

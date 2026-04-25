@@ -17,7 +17,6 @@ const productSchema = new mongoose.Schema({
   links: [{ type: String }],
 });
 
-// Model
 const googles = mongoose.model("googles", productSchema);
 
 module.exports = googles;
