@@ -5,3 +5,12 @@ server/.env
 
 frontend/node_modules
 backend/node_modules
+
+/UserInterface/blackhole/src/components/home.js
+/UserInterface/blackhole/src/components/searchEngine.js
+/UserInterface/blackhole/src/App.css
+/UserInterface/blackhole/src/header.css
+/UserInterface/blackhole/src/SEstyle.css
+/components/searchEngine.js
+/components/home.js
+

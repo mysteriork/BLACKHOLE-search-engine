@@ -18,7 +18,7 @@ app.listen(PORT, async () => {
         console.log("Mongodb connected successfully ");
       })
       .catch((err) =>
-        console.error("Error connecting to MongoDB", err.message)
+        console.error("Error connecting to MongoDB", err.message),
       );
   } catch (error) {
     console.error("fetching database error", error);
@@ -26,14 +26,15 @@ app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// Middleware
 app.use(express.json());
 
 app.get("/search", async (req, res) => {
   const query = req.query.name;
 
   try {
-    const results = await googles.find({ Title: new RegExp(query, "i") });
+    const results = await googles
+      .find({ Title: new RegExp(query, "i") })
+      .sort({ _id: -1 });
     res.json(results);
   } catch (error) {
     console.log("Error in database:", error);
